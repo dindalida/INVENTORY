@@ -1,4 +1,3 @@
-
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
@@ -80,8 +79,6 @@ app.get('/api/health', (req, res) => {
 // Import routes
 const authRoutes = require('./routes/auth');
 const productRoutes = require('./routes/products');
-
-console.log('✅ Auth routes loaded:', typeof authRoutes);
 
 // Mount routes
 app.use('/api/auth', authRoutes);
